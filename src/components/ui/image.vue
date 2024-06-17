@@ -1,20 +1,19 @@
 <script>
-
 export default {
   name: 'image',
   props: { 
-    path: String,
-    description: String,
+    src: String,
+    alt: String,
   }
 };
 </script>
 
 <template>
     <picture>
-        <source :srcset="'img/' + path + '-large.webp'" media="(min-width: 1024px)">
-        <source :srcset="'img/' + path + '-medium.webp'" media="(min-width: 768px)">
-        <source :srcset="'img/' + path + '-small.webp'" media="(min-width: 375px)">
-        <img class="img" :src="'img/' + path + '.webp'" :alt="description">
+        <source :srcset="'img/' + src + '-large.webp'" media="(min-width: 1024px)">
+        <source :srcset="'img/' + src + '-medium.webp'" media="(min-width: 768px)">
+        <source :srcset="'img/' + src + '-small.webp'" media="(min-width: 375px)">
+        <img class="img" :src="'img/' + src + '.webp'" :alt="alt">
     </picture>
 </template>
 
