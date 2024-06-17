@@ -3,8 +3,11 @@
 ## Purpose
 
 [ ] Unitary test
-[ ] WCAG & SEA
+
+[ ] WCAG & SEO
+
 [ ] Rest API
+
 [ ] Library Storybook or Fractal
 
 ## Run
