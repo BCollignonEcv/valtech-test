@@ -42,6 +42,15 @@ export default {
     /* margin-bottom: var(--); */
 }
 
+.card .card-img img{
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .card-img img{
+    transform: scale(1.2);
+}
+
+
 .card-img img {
     object-fit: cover;
 }
@@ -70,10 +79,12 @@ export default {
 
 h1.card-title {
     font-size: 4rem;
+    color: var(--c-1-100);
 }
 
 h2.card-title {
     font-size: 3rem;
+    color: var(--c-1-100);
 }
 
 .card-subtitle,

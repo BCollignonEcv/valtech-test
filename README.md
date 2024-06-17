@@ -1,10 +1,12 @@
 # Valtech test
 
+link : https://bcollignonecv.github.io/valtech-test/
+
 ## Purpose
 
-[ ] Unitary test
+[x] Unitary test
 
-[ ] WCAG & SEO
+[x] WCAG & SEO
 
 [ ] Rest API
 
@@ -12,4 +14,18 @@
 
 ## Run
 
-## Stacks
+### Local
+
+    npm run dev
+
+### Build
+
+    npm run build
+
+### Preview
+
+    npm run preview
+
+### Test
+
+    npm test
