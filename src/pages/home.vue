@@ -13,51 +13,51 @@ export default {
                     subtitle: "Front-end",
                     description: "Lorem ipsum dolor sit a met lorem dolor sit a met factius lorem upsun dolor site a met ipsun lorem amet",
                     img: {
-                        path: "valtech",
-                        description: "Photo of port"
+                        src: "valtech",
+                        alt: "Photo of port"
                     }
                 },
                 {
                     title: "Venice",
                     subtitle: "Italy",
                     img: {
-                        path: "venice",
-                        description: "Photo of a bridge in Venise"
+                        src: "venice",
+                        alt: "Photo of a bridge in Venise"
                     }
                 }, {
                     title: "Berlin",
                     subtitle: "Germany",
                     img: {
-                        path: "berlin",
-                        description: "Photo of Fernsehturm tower in Berlin"
+                        src: "berlin",
+                        alt: "Photo of Fernsehturm tower in Berlin"
                     }
                 }, {
                     title: "Barcelona",
                     subtitle: "Spain",
                     img: {
-                        path: "barcelona",
-                        description: "Photo of the Sagrada Familia in Barcelona"
+                        src: "barcelona",
+                        alt: "Photo of the Sagrada Familia in Barcelona"
                     }
                 }, {
                     title: "Paris",
                     subtitle: "France",
                     img: {
-                        path: "paris",
-                        description: "Photo of the Effeil Tower in Paris"
+                        src: "paris",
+                        alt: "Photo of the Effeil Tower in Paris"
                     }
                 }, {
                     title: "Amsterdam",
                     subtitle: "Netherland",
                     img: {
-                        path: "amsterdam",
-                        description: "Photo of amsterdam"
+                        src: "amsterdam",
+                        alt: "Photo of amsterdam"
                     }
                 }, {
                     title: "London",
                     subtitle: "United Kingdom",
                     img: {
-                        path: "london",
-                        description: "Photo of Big Ben in London"
+                        src: "london",
+                        alt: "Photo of Big Ben in London"
                     }
                 }
             ]
@@ -81,7 +81,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem; 
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .cardGallery-item {
@@ -91,6 +91,7 @@ export default {
 @media (min-width: 768px) and (max-width: 1024px){
   .cardGallery {
     grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
   }
 
   .cardGallery-item:nth-child(1) {
@@ -106,6 +107,7 @@ export default {
 @media (min-width: 1024px) {
   .cardGallery {
     grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0;
   }
 
   .cardGallery-item:nth-child(1) {

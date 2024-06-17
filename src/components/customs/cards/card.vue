@@ -60,7 +60,7 @@ export default {
 }
 
 .card-content {
-    width: 60%;
+    padding: 1rem;
 }
 
 .card-title {
@@ -83,6 +83,7 @@ h2.card-title {
     text-align: center;
     letter-spacing: .2ch;
     color: var(--c-1-100);
+    max-width: 70ch;
 }
 
 .card-subtitle {
