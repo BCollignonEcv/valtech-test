@@ -69,58 +69,61 @@ export default {
 
 <template>
     <section class="cardGallery">
-      <article v-for="city in cities" class="cardGallery-item">
-        <c_card v-bind="city"></c_card>
-      </article>
+        <article v-for="city in cities" class="cardGallery-item">
+            <c_card v-bind="city"></c_card>
+        </article>
     </section>
 </template>
 
 <style scoped>
-
-.cardGallery{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem; 
-  margin: 1rem;
+.cardGallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 1rem;
 }
 
 .cardGallery-item {
-  height: 500px;
+    height: 30vh;
+    min-height: 300px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-  .cardGallery {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem 0;
-  }
+.cardGallery-item:nth-child(1) {
+    height: 50vh;
+}
 
-  .cardGallery-item:nth-child(1) {
-    grid-column: span 2; 
-    height: 700px;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cardGallery {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem 0;
+    }
 
-  .cardGallery-item:nth-child(3n - 1) {
-    grid-column: span 2; 
-  }
+    .cardGallery-item:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .cardGallery-item:nth-child(3n - 1) {
+        grid-column: span 2;
+    }
 }
 
 @media (min-width: 1024px) {
-  .cardGallery {
-    grid-template-columns: repeat(4, 1fr);
-    margin: 1rem 0;
-  }
+    .cardGallery {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1rem 0;
+    }
 
-  .cardGallery-item:nth-child(1) {
-    grid-column: span 4; 
-    height: 700px;
-  }
+    .cardGallery-item:nth-child(1) {
+        grid-column: span 4;
+        height: 700px;
+    }
 
-  .cardGallery-item:nth-child(2) {
-    grid-column: span 2; 
-  }
+    .cardGallery-item:nth-child(2) {
+        grid-column: span 2;
+    }
 
-  .cardGallery-item:nth-child(7) {
-    grid-column: span 2; 
-  }
+    .cardGallery-item:nth-child(7) {
+        grid-column: span 2;
+    }
 }
 </style>

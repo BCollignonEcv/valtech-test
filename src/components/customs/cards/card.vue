@@ -42,6 +42,15 @@ export default {
     /* margin-bottom: var(--); */
 }
 
+.card .card-img img{
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .card-img img{
+    transform: scale(1.2);
+}
+
+
 .card-img img {
     object-fit: cover;
 }
@@ -69,17 +78,19 @@ export default {
 }
 
 h1.card-title {
-    font-size: 4rem;
+    font-size: var(--fs-1);
+    color: var(--c-1-100);
 }
 
 h2.card-title {
-    font-size: 3rem;
+    font-size: var(--fs-2);
+    color: var(--c-1-100);
 }
 
 .card-subtitle,
 .card-description {
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: var(--fs-3);
     text-align: center;
     letter-spacing: .2ch;
     color: var(--c-1-100);

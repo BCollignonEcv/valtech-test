@@ -1,9 +1,9 @@
 /* Styles for devices with a maximum width of 375px (e.g., mobile devices) */
 @media (max-width: 375px) {
     :root {
-        --fs-1: 2.5rem;
-        --fs-2: 1.875rem;
-        --fs-3: 2rem;
+        --fs-1: 4rem;
+        --fs-2: 3rem;
+        --fs-3: 1.2rem;
         --m-1: 3rem;
         --m-2: 2.4rem;
         --m-3: 2rem;
@@ -13,9 +13,9 @@
 /* Styles for devices with a maximum width of 768px (e.g., tablets) */
 @media (max-width: 768px) {
     :root {
-        --fs-1: 2.5rem;
-        --fs-2: 1.875rem;
-        --fs-3: 2rem;
+        --fs-1: 4rem;
+        --fs-2: 3rem;
+        --fs-3: 1.2rem;
         --m-1: 3rem;
         --m-2: 2.4rem;
         --m-3: 2rem;
@@ -25,9 +25,9 @@
 /* Styles for devices with a maximum width of 1024px (e.g., small laptops) */
 @media (max-width: 1024px) {
     :root {
-        --fs-1: 2.5rem;
-        --fs-2: 1.875rem;
-        --fs-3: 2rem;
+        --fs-1: 4rem;
+        --fs-2: 3rem;
+        --fs-3: 1.2rem;
         --m-1: 3rem;
         --m-2: 2.4rem;
         --m-3: 2rem;
@@ -37,9 +37,9 @@
 /* Styles for devices with a minimum width of 1280px (e.g., large desktops) */
 @media (min-width: 1280px) {
     :root {
-        --fs-1: 2.5rem;
-        --fs-2: 1.875rem;
-        --fs-3: 2rem;
+        --fs-1: 4rem;
+        --fs-2: 3rem;
+        --fs-3: 1.2rem;
         --m-1: 3rem;
         --m-2: 2.4rem;
         --m-3: 2rem;
@@ -47,8 +47,8 @@
 }
 
 :root {
-    --c-0-100: #ffffff;
-    --c-1-100: #e7e7e7;
-    --c-2-100: #000000;
+    --c-1-100: rgb(231, 231, 231);
+    --c-1-75: rgb(231, 231, 231, .75);
+    --c-2-100: rgb(36, 36, 36);
     --c-2-50: rgba(0, 0, 0,.5);
 }
